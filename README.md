@@ -1,4 +1,4 @@
-# **Base Web3 Project**
+# **NFT marketplace**
 
 This is a basic starter project to help you set up a Solidity development environment using Hardhat. Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software. With Hardhat, you can create and deploy smart contracts, build dApps, and run automated tests for your smart contracts.
 
