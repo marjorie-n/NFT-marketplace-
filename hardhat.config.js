@@ -10,8 +10,8 @@ require("dotenv").config()
  * @type import('hardhat/config').HardhatUserConfig
  */
 
-const POLYGON_MATIC_PRIVATE_KEY = process.env.GOERLI_PRIVATE_KEY || "0x"
-const POLYGON_MATIC_RPC_URL = process.env.GOERLI_RPC_URL || ""
+const POLYGON_MATIC_PRIVATE_KEY = process.env.POLYGON_MATIC_PRIVATE_KEY || "0x"
+const POLYGON_MATIC_RPC_URL = process.env.POLYGON_MATIC_RPC_URL || ""
 const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || ""
 
 // Your API key for Etherscan, obtain one at https://etherscan.io/
