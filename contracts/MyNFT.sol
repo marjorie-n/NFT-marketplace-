@@ -38,7 +38,11 @@ contract MyNFT is ERC721Enumerable, Ownable {
         claimFundAdress = _newClaimFundAdress;
     }
 
-    function baseURI(string calldata _baseURI) public onlyOwner {
+    function setbaseURI(string calldata _baseURI) public onlyOwner {
         nftURI = _baseURI;
+    }
+
+    function _baseURI() internal view override returns (string memory) {
+        return nftURI;
     }
 }
