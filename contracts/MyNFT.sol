@@ -4,6 +4,13 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract MyNFT is ERC721Enumerable, Ownable {
-    constructor()ERC721("MyNFT", "NFT") {
-}
+    uint64 public price = 0.001 ether;
+    uint256 public max_token_nft = 100;
+    uint8 public presaleListMax = 2;
+    address public claimFundAdress;
+    string public nftURI;
+    mapping(address => bool) public presaleList;
+    mapping(address => uint8) public presaleListClaim;
+
+    constructor() ERC721("MyNFT", "NFT") {}
 }
