@@ -27,7 +27,12 @@ contract MyNFT is ERC721Enumerable, Ownable {
     function setTotalSales(uint256 _newTotalSales) external onlyOwner {
         max_token_nft = _newTotalSales;
     }
-    function setPrelistSales (uint8 _newPrelistSales) external onlyOwner {
+
+    function setPrelistSales(uint8 _newPrelistSales) external onlyOwner {
         presaleListMax = _newPrelistSales;
+    }
+
+    function setClaimFundAdress(address _newClaimFundAdress) external onlyOwner {
+        claimFundAdress = _newClaimFundAdress;
     }
 }
