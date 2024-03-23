@@ -19,4 +19,8 @@ contract MyNFT is ERC721Enumerable, Ownable {
         nftURI = _nftURI;
         claimFundAdress = _claimFundAdress;
     }
+
+    function setPrice(uint64 _newPrice) external onlyOwner {
+        price = _newPrice;
+    }
 }
