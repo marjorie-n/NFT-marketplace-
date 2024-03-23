@@ -32,7 +32,13 @@ contract MyNFT is ERC721Enumerable, Ownable {
         presaleListMax = _newPrelistSales;
     }
 
-    function setClaimFundAdress(address _newClaimFundAdress) external onlyOwner {
+    function setClaimFundAdress(
+        address _newClaimFundAdress
+    ) external onlyOwner {
         claimFundAdress = _newClaimFundAdress;
+    }
+
+    function baseURI(string calldata _baseURI) public onlyOwner {
+        nftURI = _baseURI;
     }
 }
