@@ -12,5 +12,11 @@ contract MyNFT is ERC721Enumerable, Ownable {
     mapping(address => bool) public presaleList;
     mapping(address => uint8) public presaleListClaim;
 
-    constructor() ERC721("MyNFT", "NFT") {}
+    constructor(
+        string memory _nftURI,
+        address _claimFundAdress
+    ) ERC721("MyNFT", "NFT") {
+        nftURI = _nftURI;
+        claimFundAdress = _claimFundAdress;
+    }
 }
